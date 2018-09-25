@@ -14,10 +14,11 @@
 html, body, h1, h2, h3, h4, h5, h6 { font-family: "Raleway", sans-serif }
 
     img {
-        margin: 10px
+        margin: 10px 
     }
+
 </style>
-<body class="w3-light-grey">
+<body>
 
     <!-- w3-content defines a container for fixed size centered content,
     and is wrapped around the whole page content, except for the footer in this example -->
@@ -35,32 +36,23 @@ html, body, h1, h2, h3, h4, h5, h6 { font-family: "Raleway", sans-serif }
             <!-- Blog entries -->
             <div class="w3-col l8 s12">
                 <!-- Blog entry -->
-                <div class="w3-card-4 w3-margin w3-white">
-                    <img src="~/Images/kalliolla.jpg" alt="castle" style="width:96.5%">
-                    <div class="w3-container">
-                        <h3><b>TITLE HEADING</b></h3>
-                        <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
-                    </div>
-
-                    <div class="w3-container">
-                        <p>
-                            Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-                            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
-                        </p>
-                        <div class="w3-row">
-                            <div class="w3-col m8 s12">
-                                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-                            </div>
-                            <div class="w3-col m4 w3-hide-small">
-                                <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
-                            </div>
+                <div class="w3-card-4 w3-display-container w3-container">
+                    <img src="~/Images/desk.jpg" alt="castle" style="width:96.5%">
+                    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+                        <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+                        <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+                        <h3 class="w3-hide-small">COLLECTION 2016</h3>
+                        <div class="w3-col m8 s12">
+                            <p><a class="w3-button w3-padding-large w3-white w3-border w3-margin-top" style="font-size:13px" href="https://localhost:44364/Bolgs/Index"><b>READ MORE &raquo;</b></a></p>
                         </div>
                     </div>
+
+
                 </div>
                 <hr>
 
                 <!-- Blog entry -->
-                <div class="w3-card-4 w3-margin w3-white">
+                <div class="w3-card w3-margin w3-white">
                     <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
                     <div class="w3-container">
                         <h3><b>BLOG ENTRY</b></h3>
@@ -88,7 +80,7 @@ html, body, h1, h2, h3, h4, h5, h6 { font-family: "Raleway", sans-serif }
             <!-- Introduction menu -->
             <div class="w3-col l4">
                 <!-- About Card -->
-                <div class="w3-card w3-margin w3-margin-top">
+                <div class="w3-card w3-margin w3-margin-top w3-white">
                     <img src="~/Images/minaUusi.JPG" style="width:93%">
                     <div class="w3-container w3-white">
                         <h4><b>Maria Ahokas</b></h4>
