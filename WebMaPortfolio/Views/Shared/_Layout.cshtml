@@ -1,9 +1,12 @@
 ﻿<!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>@ViewBag.Title - Maria's application</title>
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -16,7 +19,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-
+                    <span class="icon-bar"></span>
                 </button>
                 @Html.ActionLink("Maria's Portfolio", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
@@ -24,17 +27,29 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("CV", "Index", "CV")</li>
+                    <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Blogs <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Page 1-1</a></li>
+                        <li><a href="#">Page 1-2</a></li>
+                        <li><a href="#">Page 1-3</a></li>
+                    </ul>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
+
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
-    <div class="container body-content">
+
+    <div class="w3-container-fluid body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        <footer class="w3-container w3-black w3-center w3-margin-top">
+            <p class="w3-margin-top">Find me on Linkedin</p>
+            <a href="https://www.linkedin.com/in/maria-ahokas/" class="fa fa-linkedin fa-3x"></a>
+           
+            <p class="w3-margin-top">&copy; @DateTime.Now.Year - My Portfolio</p>
         </footer>
     </div>
 

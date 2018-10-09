@@ -2,22 +2,25 @@
 @{
     ViewBag.Title = "Home Page";
 }
-
 <!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
+<html lang="en">
+<title>Home</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-html, body, h1, h2, h3, h4, h5, h6 { font-family: "Raleway", sans-serif }
 
-    img {
-        margin: 10px 
+
+    html, body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Raleway", sans-serif
     }
 
+    img {
+        margin: 10px
+    }
 </style>
+
 <body>
 
     <!-- w3-content defines a container for fixed size centered content,
@@ -36,18 +39,16 @@ html, body, h1, h2, h3, h4, h5, h6 { font-family: "Raleway", sans-serif }
             <!-- Blog entries -->
             <div class="w3-col l8 s12">
                 <!-- Blog entry -->
-                <div class="w3-card-4 w3-display-container w3-container">
-                    <img src="~/Images/desk.jpg" alt="castle" style="width:96.5%">
-                    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
-                        <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
-                        <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
-                        <h3 class="w3-hide-small">COLLECTION 2016</h3>
+                <div class="w3-card w3-display-container w3-container w3-margin w3-margin-top">
+                    <img src="~/Images/desk.jpg" alt="Computer" style="width:100%">
+                    <div class="w3-display-topleft w3-text-white" style="padding:100px 48px">
+                        <h1 class="w3-jumbo w3-hide-small">Jotain tekstiä</h1>
+                        <h1 class="w3-hide-large w3-hide-medium">Jotain</h1>
+                        <h3 class="w3-hide-small">VUOSI 2018</h3>
                         <div class="w3-col m8 s12">
                             <p><a class="w3-button w3-padding-large w3-white w3-border w3-margin-top" style="font-size:13px" href="https://localhost:44364/Bolgs/Index"><b>READ MORE &raquo;</b></a></p>
                         </div>
                     </div>
-
-
                 </div>
                 <hr>
 
@@ -66,7 +67,7 @@ html, body, h1, h2, h3, h4, h5, h6 { font-family: "Raleway", sans-serif }
                         </p>
                         <div class="w3-row">
                             <div class="w3-col m8 s12">
-                                <p><a class="btn btn-default" href="https://localhost:44364/Bolgs/Index">Read blogs &raquo;</a></p>
+                                <p><a class="btn btn-default" href="https://localhost:44364/Blogs/Index">Read blogs &raquo;</a></p>
                             </div>
                             <div class="w3-col m4 w3-hide-small">
                                 <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
@@ -146,11 +147,7 @@ html, body, h1, h2, h3, h4, h5, h6 { font-family: "Raleway", sans-serif }
     </div>
 
     <!-- Footer -->
-    <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-        <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-        <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </footer>
+
 
 </body>
 </html>

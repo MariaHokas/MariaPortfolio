@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace WebMaPortfolio.Controllers
 {
-    public class BolgsController : Controller
+    public class BlogsController : Controller
     {
-        // GET: Bolgs
+        // GET: Blogs
         public ActionResult Index()
         {
             return View();
